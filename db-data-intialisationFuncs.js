@@ -33,7 +33,6 @@ const intialisingUsersIntoDBFn=()=>{
     }
 
   })
-
    console.log("users saved to DB")
 }
 

@@ -4,10 +4,6 @@ const mongoose= require("mongoose");
 const {Schema}= mongoose;
 
 
-
-
-
-
 const ProductSchema= new Schema( {
     id:mongoose.Schema.Types.ObjectId,
     pName:{
@@ -15,7 +11,7 @@ const ProductSchema= new Schema( {
     unique:[true,"product name should be unique"],
     required:[true,"please add the name"]
   },
-    kreator:{
+    creator:{
     type:String,
     required:[true,"please add the kreator name"]
   },

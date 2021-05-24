@@ -14,8 +14,7 @@ productsRouter.route("/")
     console.log("from product router",{body})
   try{
     const productsData= await Product.find({},excludeKeys)
-    res.status(200).json({success:true,message:"successful",data:productsData})
-   
+    res.status(200).json({success:true,message:"successful",data:productsData}) 
   }
   catch(err){
     res.status(500).json({success:false,message:"error while fetching products",errorMsg:err.msg})

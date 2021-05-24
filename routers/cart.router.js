@@ -44,6 +44,9 @@ cartRouter.route("/:userId/cart/:productId")
   const user=req.user
   const update= req.body
   const prod= user.cart.find(item=>item.productId==productId)
+
+  if(!prod){return res.json({success:false,message:"please enter the correct product Id"})}
+  
   const updatedProd= extend(prod,update)
   await user.save()
   res.json({success:true,message:"product is updated successfully",user})
@@ -54,6 +57,9 @@ cartRouter.route("/:userId/cart/:productId")
      const user=req.user
      const {productId}=req.params
      const prod= user.cart.find(item=>item.productId==productId)
+
+     if(!prod){return res.json({success:false,message:"please enter the correct product Id"})}
+
      user.cart.pull(prod)
      await user.save()
       res.json({success:true,message:"product is deleted successfully",user})
