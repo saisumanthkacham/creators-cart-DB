@@ -14,10 +14,10 @@ productsRouter.route("/")
     console.log("from product router",{body})
   try{
     const productsData= await Product.find({},excludeKeys)
-    res.status(200).json({success:true,message:"successful",data:productsData}) 
+    res.status(200).json({success:true,message:"successful :)",data:productsData}) 
   }
   catch(err){
-    res.status(500).json({success:false,message:"error while fetching products",errorMsg:err.msg})
+    res.status(500).json({success:false,message:"error while fetching products :(",error:err})
   }
   
 })
@@ -30,10 +30,10 @@ productsRouter.route("/:id")
    try{
     const id= req.params.id
     const prod= await Product.findById(id)
-    res.json({success:true,prod})
+    res.status(200).json({success:true, message:"success :)",prod})
    }
    catch(err){
-    res.status(404).json({success:false,message:"product not found"})
+    res.status(404).json({success:false,message:"product not found :(", error:err})
   }
 })
 

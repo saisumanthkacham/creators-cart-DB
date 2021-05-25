@@ -12,10 +12,10 @@ userRouter.route("/")
 .get(async (req,res)=>{
   try{
    const users= await User.find({},excludeKeys)
-   res.status(200).json({success:true,message:"successful",users})
+   res.status(200).json({success:true,message:"successful :)",users})
   }
   catch(err){
-     res.status(500).json({success:false,message:"error while fetching users",errorMsg:err.msg})
+     res.status(500).json({success:false,message:"error while fetching users :(",error:err})
   }
 });
 
@@ -25,10 +25,10 @@ userRouter.route("/:id")
   try{
   const id=req.params.id
    const user= await User.findById(id)
-   res.status(200).json({success:true,message:"successful",user})
+   res.status(200).json({success:true,message:"successful :)",user})
   }
   catch(err){
-     res.status(500).json({success:false,message:"error while fetching user",errorMsg:err.msg})
+     res.status(500).json({success:false,message:"error while fetching user :(",error:err})
   }
 
 })

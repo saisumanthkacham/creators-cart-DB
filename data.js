@@ -8,7 +8,7 @@ const productsData= [
     inStock:true,
     fastDelivery:true,
     idealFor: "men",  
-    qty:1,
+     
   
   },
 
@@ -21,7 +21,7 @@ const productsData= [
     inStock:true,
     fastDelivery:false,
     idealFor: "men", 
-    qty:1,
+     
   
   },
 
@@ -34,7 +34,7 @@ const productsData= [
     inStock:true,
     fastDelivery:true,
     idealFor: "men", 
-    qty:1,
+     
   
   },
 
@@ -47,7 +47,7 @@ const productsData= [
     inStock:true,
     fastDelivery:true,
     idealFor: "men",  
-    qty:1,
+     
   
   },
 
@@ -60,7 +60,7 @@ const productsData= [
     inStock:true,
     fastDelivery:true,
     idealFor:"men",
-    qty:1,
+     
   
   },
 
@@ -73,7 +73,7 @@ const productsData= [
     inStock:true,
     fastDelivery:true,
     idealFor: "men",
-    qty:1,
+     
   
   },
 
@@ -86,7 +86,7 @@ const productsData= [
     inStock:true,
     fastDelivery:false,
     idealFor: "Women",  
-    qty:1,
+     
   
   },
 
@@ -99,7 +99,7 @@ const productsData= [
     inStock:true,
     fastDelivery:false,
     idealFor: "Women",  
-    qty:1,
+     
   
   },
 
@@ -112,7 +112,7 @@ const productsData= [
     inStock:true,
     fastDelivery:true,
     idealFor: "Women",  
-    qty:1,
+     
   
   },
 
@@ -125,7 +125,7 @@ const productsData= [
     inStock:true,
     fastDelivery:true,
     idealFor: "men",  
-    qty:1,
+     
   
   },
 
@@ -138,7 +138,7 @@ const productsData= [
     inStock:true,
     fastDelivery:true,
     idealFor: "men",  
-    qty:1,
+     
   
   },
 
@@ -151,7 +151,7 @@ const productsData= [
     inStock:true,
     fastDelivery:true,
     idealFor: "men",  
-    qty:1,
+     
   
   },
 
@@ -164,7 +164,7 @@ const productsData= [
     inStock:false,
     fastDelivery:false,
     idealFor: "men",  
-    qty:1,
+     
   
   },
 
@@ -177,7 +177,7 @@ const productsData= [
     inStock:false,
     fastDelivery:false,
     idealFor: "men",  
-    qty:1,
+     
   
   },
 
@@ -190,7 +190,7 @@ const productsData= [
     inStock:true,
     fastDelivery:true,
     idealFor: "men",  
-    qty:1,
+    
   
   },
 
@@ -203,7 +203,7 @@ const productsData= [
     inStock:true,
     fastDelivery:true,
     idealFor: "men",  
-    qty:1,
+     
   
   },
 
@@ -216,7 +216,7 @@ const productsData= [
     inStock:true,
     fastDelivery:true,
     idealFor: "Women",  
-    qty:1,
+     
   
   },
 
@@ -229,7 +229,7 @@ const productsData= [
     inStock:false,
     fastDelivery:true,
     idealFor: "Women",  
-    qty:1,
+     
   
   },
 
@@ -242,7 +242,7 @@ const productsData= [
     inStock:true,
     fastDelivery:true,
     idealFor: "men",  
-    qty:1,
+     
   
   },
 
@@ -255,7 +255,7 @@ const productsData= [
     inStock:false,
     fastDelivery:false,
     idealFor: "Women",  
-    qty:1,
+     
   
   },
 
@@ -268,7 +268,7 @@ const productsData= [
     inStock:false,
     fastDelivery:false,
     idealFor: "men",  
-    qty:1,
+     
   
   },
 
@@ -281,7 +281,7 @@ const productsData= [
     inStock:false,
     fastDelivery:false,
     idealFor: "men",  
-    qty:1,
+     
    },
 
     {
@@ -293,7 +293,7 @@ const productsData= [
     inStock:true,
     fastDelivery:true,
     idealFor: "men",  
-    qty:1,
+     
     },
 
      {
@@ -305,7 +305,7 @@ const productsData= [
     inStock:true,
     fastDelivery:true,
     idealFor: "Women",  
-    qty:1,
+     
     },
 
   {
@@ -317,7 +317,7 @@ const productsData= [
     inStock:true,
     fastDelivery:true,
     idealFor: "men",  
-    qty:1,
+     
     },
 
   {
@@ -329,7 +329,7 @@ const productsData= [
     inStock:true,
     fastDelivery:true,
     idealFor: "Women",  
-    qty:1,
+     
     },
 
 
@@ -344,7 +344,7 @@ const productsData= [
     inStock:false,
     fastDelivery:false,
     idealFor: "men",  
-    qty:1,
+     
   },
 
   {
@@ -356,7 +356,7 @@ const productsData= [
     inStock:false,
     fastDelivery:true,
     idealFor: "men",  
-    qty:1,
+     
   },
 
   {
@@ -368,7 +368,7 @@ const productsData= [
     inStock:true,
     fastDelivery:true,
     idealFor: "men",  
-    qty:1,
+     
   },
 
    {
@@ -380,7 +380,7 @@ const productsData= [
     inStock:true,
     fastDelivery:false,
     idealFor: "men",  
-    qty:1,
+     
   },
 
    {
@@ -392,7 +392,7 @@ const productsData= [
     inStock:false,
     fastDelivery:false,
     idealFor: "men",  
-    qty:1,
+     
   },
 
    {
@@ -404,7 +404,7 @@ const productsData= [
     inStock:false,
     fastDelivery:false,
     idealFor: "men",  
-    qty:1,
+     
   },
   
    {
@@ -416,7 +416,7 @@ const productsData= [
     inStock:true,
     fastDelivery:true,
     idealFor: "men",  
-    qty:1,
+     
   },
 
    {
@@ -428,7 +428,7 @@ const productsData= [
     inStock:true,
     fastDelivery:true,
     idealFor: "men",  
-    qty:1,
+     
   },
 
    {
@@ -440,7 +440,7 @@ const productsData= [
     inStock:true,
     fastDelivery:true,
     idealFor: "men",  
-    qty:1,
+     
   },
 
    {
@@ -452,7 +452,7 @@ const productsData= [
     inStock:false,
     fastDelivery:true,
     idealFor: "men",  
-    qty:1,
+     
   },
 
    {
@@ -464,7 +464,7 @@ const productsData= [
     inStock:false,
     fastDelivery:true,
     idealFor: "Women",  
-    qty:1,
+     
   },
 
    {
@@ -476,7 +476,7 @@ const productsData= [
     inStock:false,
     fastDelivery:false,
     idealFor: "Women",  
-    qty:1,
+     
   },
 
    {
@@ -488,7 +488,7 @@ const productsData= [
     inStock:false,
     fastDelivery:false,
     idealFor: "Women",  
-    qty:1,
+     
   },
 
   {
@@ -500,7 +500,7 @@ const productsData= [
     inStock:false,
     fastDelivery:false,
     idealFor: "men",  
-    qty:1,
+     
   },
 
   {
@@ -512,7 +512,7 @@ const productsData= [
     inStock:false,
     fastDelivery:false,
     idealFor: "men",  
-    qty:1,
+     
   },
 
   {
@@ -524,7 +524,7 @@ const productsData= [
     inStock:false,
     fastDelivery:true,
     idealFor: "men",  
-    qty:1,
+     
   },
 
 
@@ -538,7 +538,7 @@ const productsData= [
     inStock:true,
     fastDelivery:true,
     idealFor: "Women",  
-    qty:1,
+     
   },
 
   {
@@ -550,7 +550,7 @@ const productsData= [
     inStock:true,
     fastDelivery:true,
     idealFor: "Women",  
-    qty:1,
+     
   },
 
   {
@@ -562,7 +562,7 @@ const productsData= [
     inStock:false,
     fastDelivery:false,
     idealFor: "men",  
-    qty:1,
+     
   },
 
    {
@@ -574,7 +574,7 @@ const productsData= [
     inStock:true,
     fastDelivery:true,
     idealFor: "men",  
-    qty:1,
+     
   },
 
 // Twitter
@@ -587,7 +587,7 @@ const productsData= [
     inStock:true,
     fastDelivery:true,
     idealFor: "men",  
-    qty:1,
+     
   },
 
    {
@@ -599,7 +599,7 @@ const productsData= [
     inStock:true,
     fastDelivery:false,
     idealFor: "men",  
-    qty:1,
+     
   },
 
    {
@@ -611,7 +611,7 @@ const productsData= [
     inStock:true,
     fastDelivery:true,
     idealFor: "men",  
-    qty:1,
+     
   },
 
   {
@@ -623,7 +623,7 @@ const productsData= [
     inStock:true,
     fastDelivery:false,
     idealFor: "men",  
-    qty:1,
+     
   },
 
 {
@@ -635,7 +635,7 @@ const productsData= [
     inStock:true,
     fastDelivery:true,
     idealFor: "men",  
-    qty:1,
+     
   },
 
   {
@@ -647,7 +647,7 @@ const productsData= [
     inStock:true,
     fastDelivery:true,
     idealFor: "Women",  
-    qty:1,
+     
   },
 
   {
@@ -659,7 +659,7 @@ const productsData= [
     inStock:true,
     fastDelivery:false,
     idealFor: "men",  
-    qty:1,
+     
   },
 
   {
@@ -671,7 +671,7 @@ const productsData= [
     inStock:false,
     fastDelivery:false,
     idealFor: "men",  
-    qty:1,
+     
   },
 
 ]
@@ -680,15 +680,17 @@ usersData= [
   {userName:"admin",
   password:"admin",
   emailId:"admin@gmail.com",
-  cart:[{productId:"60a8ae5fc73f1e02f6bf3410",qty:1},{productId:"60a8ae5fc73f1e02f6bf3412",qty:1}],
+  cart:[{productId:"60ad0de835560f0228738927",qty:1 },{productId:"60ad0de835560f022873892a",qty:1 }],
   wishList:[],
   },
 
+  
+  
   {userName:"admin2",
   password:"admin2",
   emailId:"admin2@gmail.com",
   cart:[],
-  wishList:[{productId:"60a8ae5fc73f1e02f6bf3410"},{productId:"60a8ae5fc73f1e02f6bf3412"}],
+  wishList:[{productId:"60ad0de835560f0228738927"},{productId:"60ad0de835560f022873892a"}],
   }
 ]
 

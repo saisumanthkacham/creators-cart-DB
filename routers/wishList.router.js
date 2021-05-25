@@ -5,6 +5,11 @@ const {User} = require("../models/userModel")
 const {extend}= require("lodash")
 
 
+const populateOptions={
+  path:"wishList.productId",
+  select:"id pName creator platform image price idealFor"
+}
+
 // middleware to find user by ID and inserting the extracted user into the request
 wishListRouter.param("userId",async (req,res,next,userId)=>{
   try{
@@ -13,17 +18,23 @@ wishListRouter.param("userId",async (req,res,next,userId)=>{
     next()
   }
   catch(err){
-    res.status(404).json({success:false,message:"couldnot find the user",errorMsg:err.msg})
+    res.status(404).json({success:false,message:"couldnot find the user :(",error:err})
   }
  
 })
 
 
 wishListRouter.route("/:userId/wishList")
-// getting cart from the user using userId
-.get((req,res)=>{
-  const {wishList}=req.user
-  res.json({success:true,message:"success",wishList})
+.get(async(req,res)=>{
+  const user= req.user
+  try{
+     const {wishList}= await user.populate(populateOptions).execPopulate()
+  res.status(200).json({success:true,message:"success :)",wishList})
+  }
+  catch(err){
+    res.status(500).json({success:false,message:"could not fetch the wishList :("})
+  }
+ 
 })
 
 // adding product to the cart using userId
@@ -31,9 +42,15 @@ wishListRouter.route("/:userId/wishList")
   const extractedProd= req.body
   const user=req.user
   user.wishList.push(extractedProd)
+
+  try{
   await user.save()
-  res.json({success:true,message:"product is added to wishList successfully",user})
-  
+  res.status(201).json({success:true,message:"product is added to wishList successfully :)",wishList:user.wishList})
+  }
+  catch(err){
+    res.status(500).json({success:false,message:"could not add the product to wishList :(",error:err})
+  }
+ 
 })
 
 
@@ -46,11 +63,16 @@ wishListRouter.route("/:userId/wishList/:productId")
      const prod= user.wishList.find(item=>item.productId==productId)
 
      if(!prod)
-     {return res.json({success:false,message:"please enter the correct product Id",user})}
-
+     {return res.status(404).json({success:false,message:"please enter the correct product Id :("})}
      user.wishList.pull(prod)
+
+     try{
      await user.save()
-      res.json({success:true,message:"product is deleted successfully",user})
+     res.status(200).json({success:true,message:"product is deleted successfully :)",wishList:user.wishList})
+     }
+     catch(err){
+      res.status(500).json({success:false,message:"could not delete the product from wishList :(",error:err})
+  }
 })
 
 module.exports={wishListRouter}
