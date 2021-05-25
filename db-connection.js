@@ -11,7 +11,9 @@ const startDBConnection=async()=>{
   try{
      const connection=await mongoose.connect(url,
      {useNewUrlParser: true,
-     useUnifiedTopology: true})
+     useUnifiedTopology: true,
+     useCreateIndex: true
+     })
 
       connection?console.log("connection established with DB :)"):console.log("cannot connect to DB :(")
     }

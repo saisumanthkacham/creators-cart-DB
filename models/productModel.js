@@ -8,30 +8,30 @@ const ProductSchema= new Schema( {
     id:mongoose.Schema.Types.ObjectId,
     pName:{
     type:String,
-    unique:[true,"product name should be unique"],
-    required:[true,"please add the name"]
+    unique:[true,"product name should be unique :/"],
+    required:[true,"please add the name :("]
   },
     creator:{
     type:String,
-    required:[true,"please add the kreator name"]
+    required:[true,"please add the kreator name :("]
   },
     platform:{
     type:String,
-    required:[true,"please add the platform name"]
+    required:[true,"please add the platform name :("]
   },
     image:{
     type:String,
-    required:[true,"please add the url for the image"]
+    required:[true,"please add the url for the image :("]
   },
     price:{
     type:Number,
-    required:[true,"please add the price for the product"]
+    required:[true,"please add the price for the product :("]
   },
 
     idealFor:{
     type:String,
-    enum:{values:["men","Women"],message:`{VALUE} is not supported` },
-    required:[true,"please add the gender"],
+    enum:{values:["men","Women"],message:`{VALUE} is not supported :(` },
+    required:[true,"please add the gender :("],
   }, 
 
     qty:Number,

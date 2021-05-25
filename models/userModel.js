@@ -8,26 +8,26 @@ UserSchema= new Schema([
   id:mongoose.Schema.Types.ObjectId,
   userName:{
     type:String,
-    unique:[true,"username should be unique"],
-    required:[true,"please enter the username"]
+    unique:[true,"username should be unique :("],
+    required:[true,"please enter the username :("]
   },
   password:{
     type:String,
-    required:[true,"please enter the password"]
+    required:[true,"please enter the password :("]
   },
   emailId:{
     type:String,
-    unique:[true,"email-id should be unique"],
-    required:[true,"please enter the email-id"]
+    unique:[true,"email-id should be unique :("],
+    required:[true,"please enter the email-id :("]
   },
   address:[{
     pinCode:{
     type:Number,
-    required:[true,"please enter the pincode"]
+    required:[true,"please enter the pincode :("]
   },
     address:{
     type:String,
-    required:[true,"please enter the address"]
+    required:[true,"please enter the address :("]
   },
     city:String,
     town:String,
