@@ -17,6 +17,7 @@ cartRouter.param("userId",async (req,res,next,userId)=>{
     const user= await User.findById(userId)
     req.user= user
     next()
+    
   }
   catch(err){
     res.status(404).json({success:false,message:"couldnot find the user :(",error:err})
@@ -45,17 +46,23 @@ cartRouter.route("/:userId/cart")
 .post(async(req,res)=>{
   const extractedProd= req.body
   const user=req.user
-  user.cart.push(extractedProd)
 
-try{
-  await user.save()
-  res.status(201).json({success:true,message:"product is added to cart successfully :)",cart:user.cart})
-}
-catch(err){
-   res.status(500).json({success:true,message:"could not add the product to db :(", error:err})
-} 
+  const ifProductAlreadyExists= user.cart.some(item=>item.productId==extractedProd.productId)
+  console.log("line 55",{ifProductAlreadyExists})
+  if(ifProductAlreadyExists){
+     return res.status(400).json({success:false,message:"product already exists in cart :("})
+   }
+     user.cart.push(extractedProd)
+  try{
+    const savedProd=await user.save()
+    console.log("line 62", savedProd)
+    res.status(201).json({success:true,message:"product is added to cart successfully :)",cart:user.cart})
 
-  
+  }
+
+  catch(err){
+    res.status(500).json({success:true,message:"could not add the product to db :(", error:err})
+  }  
 })
 
 
@@ -64,19 +71,22 @@ cartRouter.route("/:userId/cart/:productId")
 // updating the product using product Id and userId
 .post(async(req,res)=>{
   const {productId}=req.params
-  const user=req.user
+  const user= req.user
   const update= req.body
   const prod= user.cart.find(item=>item.productId==productId)
-
-  if(!prod){return res.json({success:false,message:"please enter the correct product Id :/"})}
+  
+  if(!prod){return res.json({success:false,message:"please enter the correct product Id :/"})
+  }
   const updatedProd= extend(prod,update)
 
   try{
   await user.save()
   res.status(201).json({success:true,message:"product is updated successfully :)",cart:user.cart})
+   
   }
   catch(err){
    res.status(500).json({success:true,message:"could not update the product :(", error:err})
+   console.log("error occured in updating")
   } 
 
 })

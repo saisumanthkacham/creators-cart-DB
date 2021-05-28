@@ -43,6 +43,12 @@ wishListRouter.route("/:userId/wishList")
   const user=req.user
   user.wishList.push(extractedProd)
 
+  const ifProductAlreadyExists= user.wishList.find(item=>item.productId==extractedProd.productId)
+
+   if(ifProductAlreadyExists){
+     return res.status(400).json({success:false,message:"product already exists in wishList :("})
+   }
+
   try{
   await user.save()
   res.status(201).json({success:true,message:"product is added to wishList successfully :)",wishList:user.wishList})

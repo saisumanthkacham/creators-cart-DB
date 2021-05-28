@@ -5,7 +5,12 @@ const {Schema}= mongoose;
 
 
 const ProductSchema= new Schema( {
-    id:mongoose.Schema.Types.ObjectId,
+    id:{
+    type:mongoose.Schema.Types.ObjectId,
+  
+    
+  },
+    
     pName:{
     type:String,
     unique:[true,"product name should be unique :/"],

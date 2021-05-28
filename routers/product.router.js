@@ -11,7 +11,7 @@ const excludeKeys={
 productsRouter.route("/")
 .get(async(req,res)=>{
    const body= req.body
-    console.log("from product router",{body})
+  
   try{
     const productsData= await Product.find({},excludeKeys)
     res.status(200).json({success:true,message:"successful :)",data:productsData}) 
