@@ -26,7 +26,7 @@ app.listen(3000, () => {
 
 app.get('/', (req, res) => {
   startDBConnection()
-  // these func should be run only once for the sake of intialisation
+  // these func should be run only once for the sake of intialisation of data on DB
   // intialisingProductsIntoDBFn()
   // intialisingUsersIntoDBFn()
   res.send('Hello Express app!')
