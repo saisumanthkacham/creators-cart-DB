@@ -7,7 +7,7 @@ const {extend}= require("lodash")
 
 const populateOptions={
   path:"wishList.productId",
-  select:"id pName creator platform image price idealFor"
+  select:"id pName creator platform image price inStock idealFor"
 }
 
 // middleware to find user by ID and inserting the extracted user into the request
@@ -30,6 +30,7 @@ wishListRouter.route("/:userId/wishList")
   try{
      const {wishList}= await user.populate(populateOptions).execPopulate()
   res.status(200).json({success:true,message:"success :)",wishList})
+  console.log("requested for wishlist")
   }
   catch(err){
     res.status(500).json({success:false,message:"could not fetch the wishList :("})
@@ -41,7 +42,7 @@ wishListRouter.route("/:userId/wishList")
 .post(async(req,res)=>{
   const extractedProd= req.body
   const user=req.user
-  user.wishList.push(extractedProd)
+  
 
   const ifProductAlreadyExists= user.wishList.find(item=>item.productId==extractedProd.productId)
 
@@ -49,9 +50,13 @@ wishListRouter.route("/:userId/wishList")
      return res.status(400).json({success:false,message:"product already exists in wishList :("})
    }
 
+  // else push the item to wishlist
+  user.wishList.push(extractedProd)
+
   try{
   await user.save()
   res.status(201).json({success:true,message:"product is added to wishList successfully :)",wishList:user.wishList})
+  console.log("added a product to wishlist")
   }
   catch(err){
     res.status(500).json({success:false,message:"could not add the product to wishList :(",error:err})
@@ -75,10 +80,13 @@ wishListRouter.route("/:userId/wishList/:productId")
      try{
      await user.save()
      res.status(200).json({success:true,message:"product is deleted successfully :)",wishList:user.wishList})
+     console.log("deleted the product in wishList")
      }
      catch(err){
       res.status(500).json({success:false,message:"could not delete the product from wishList :(",error:err})
   }
 })
+
+
 
 module.exports={wishListRouter}

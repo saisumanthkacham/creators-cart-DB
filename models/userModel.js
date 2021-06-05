@@ -39,10 +39,9 @@ UserSchema= new Schema([
     cart:[
       {
         productId:{ 
-        type: String,
+        type: mongoose.Schema.Types.ObjectId,
         ref:Product,
         unique:true},
-
         qty:{ type:Number, min:1}
       }  
   ],
@@ -50,8 +49,7 @@ UserSchema= new Schema([
    wishList:[
       {
         productId:{ 
-        // type: mongoose.Schema.Types.ObjectId,
-        type: String,
+        type: mongoose.Schema.Types.ObjectId,
         ref:Product,
         unique:[true,"productId should be unique :("]},
       }

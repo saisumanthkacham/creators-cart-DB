@@ -34,6 +34,7 @@ cartRouter.route("/:userId/cart")
   try{
      const {cart}= await user.populate(populateOptions).execPopulate()
   res.status(200).json({success:true,message:"success :)",cart})
+  console.log("cart requested")
   }
   catch(err){
     res.status(500).json({success:false,message:"failed in extracting cart :(",error:err})
@@ -48,20 +49,19 @@ cartRouter.route("/:userId/cart")
   const user=req.user
 
   const ifProductAlreadyExists= user.cart.some(item=>item.productId==extractedProd.productId)
-  console.log("line 55",{ifProductAlreadyExists})
+
   if(ifProductAlreadyExists){
      return res.status(400).json({success:false,message:"product already exists in cart :("})
    }
      user.cart.push(extractedProd)
   try{
     const savedProd=await user.save()
-    console.log("line 62", savedProd)
     res.status(201).json({success:true,message:"product is added to cart successfully :)",cart:user.cart})
-
+    console.log("posted an item in cart")
   }
 
   catch(err){
-    res.status(500).json({success:true,message:"could not add the product to db :(", error:err})
+    res.status(500).json({success:false,message:"could not add the product to db :(", error:err})
   }  
 })
 
@@ -82,7 +82,7 @@ cartRouter.route("/:userId/cart/:productId")
   try{
   await user.save()
   res.status(201).json({success:true,message:"product is updated successfully :)",cart:user.cart})
-   
+   console.log("updated the product in cart")
   }
   catch(err){
    res.status(500).json({success:true,message:"could not update the product :(", error:err})
@@ -103,6 +103,7 @@ cartRouter.route("/:userId/cart/:productId")
     try{
      await user.save()
       res.status(200).json({success:true,message:"product is deleted successfully :)",cart:user.cart})
+      console.log("deleted the product in cart")
     }
     catch(err){
    res.status(500).json({success:false,message:"could not delete the product :(", error:err})

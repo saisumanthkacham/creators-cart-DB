@@ -2,7 +2,7 @@ const productsData= [
   {
     pName:"Mayya's Tee",
     creator:"varunMayya",
-    platform:"instagram",
+    platform:"Instagram",
     image:"https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1617637446_6640289.jpg?w=360&dpr=1.5",
     price:500,
     inStock:true,
@@ -15,7 +15,7 @@ const productsData= [
   {
     pName:"Mayya's shirt",
     creator:"Varun Mayya",
-    platform:"instagram",
+    platform:"Instagram",
     image:"https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1620466928_6322615.jpg?w=360&dpr=1.5",
     price:1500,
     inStock:true,
@@ -28,7 +28,7 @@ const productsData= [
    {
     pName:"Shank's Shirt",
     creator:"Shashank Udupa",
-    platform:"instagram",
+    platform:"Instagram",
     image:"https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1620390747_4524110.jpg?w=360&dpr=1.5",
     price:1500,
     inStock:true,
@@ -41,7 +41,7 @@ const productsData= [
   {
     pName:"Shank's Tee",
     creator:"Shashank Udupa",
-    platform:"instagram",
+    platform:"Instagram",
     image:"https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1621344744_9808009.jpg?w=360&dpr=1.5",
     price:500,
     inStock:true,
@@ -54,7 +54,7 @@ const productsData= [
   {
     pName:"Tanay's Tee",
     creator:"Tanay Pratap",
-    platform:"instagram",
+    platform:"Instagram",
     image:"https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1610518575_2489096.jpg?w=360&dpr=1.5",
     price:500,
     inStock:true,
@@ -67,7 +67,7 @@ const productsData= [
   {
     pName:"Tanay's Shirt",
     creator:"Tanay Pratap",
-    platform:"instagram",
+    platform:"Instagram",
     image:"https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1610441993_3306632.jpg?w=360&dpr=1.5",
     price:1500,
     inStock:true,
@@ -80,7 +80,7 @@ const productsData= [
   {
     pName:"Anu's Tee",
     creator:"Anushka Rathod",
-    platform:"instagram",
+    platform:"Instagram",
     image:"https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1614938280_7820793.jpg?w=360&dpr=1.5",
     price:500,
     inStock:true,
@@ -93,7 +93,7 @@ const productsData= [
    {
     pName:"Anu's Dress ",
     creator:"Anushka Rathod",
-    platform:"instagram",
+    platform:"Instagram",
     image:"https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1618852484_5530111.gif?w=360&dpr=1.5",
     price:1500,
     inStock:true,
@@ -106,7 +106,7 @@ const productsData= [
    {
     pName:"NeoG's Tee ",
     creator:"NeoG Camp",
-    platform:"instagram",
+    platform:"Instagram",
     image:"https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1615311526_1898129.jpg?w=360&dpr=1.5",
     price:500,
     inStock:true,
@@ -119,7 +119,7 @@ const productsData= [
    {
     pName:"NeoG's shirt",
     creator:"NeoG Camp",
-    platform:"instagram",
+    platform:"Instagram",
     image:"https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1620470083_8356433.gif?w=360&dpr=1.5",
     price:1500,
     inStock:true,
@@ -132,7 +132,7 @@ const productsData= [
    {
     pName:"Raj's Tee ",
     creator:"Rajashamani",
-    platform:"instagram",
+    platform:"Instagram",
     image:"https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1616562993_7136249.jpg?w=360&dpr=1.5",
     price:500,
     inStock:true,
@@ -145,7 +145,7 @@ const productsData= [
    {
     pName:"Raj's Shirt",
     creator:"Rajashamani",
-    platform:"instagram",
+    platform:"Instagram",
     image:"https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1620479082_1553700.jpg?w=360&dpr=1.5",
     price:1500,
     inStock:true,
@@ -158,7 +158,7 @@ const productsData= [
    {
     pName:"mad's shirt",
     creator:"Mad Over Marketing",
-    platform:"instagram",
+    platform:"Instagram",
     image:"https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1610471472_7875331.jpg?w=360&dpr=1.5",
     price:1500,
     inStock:false,
@@ -171,7 +171,7 @@ const productsData= [
   {
     pName:"Mad's Tee",
     creator:"Mad Over Marketing",
-    platform:"instagram",
+    platform:"Instagram",
     image:"https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1621580372_9823975.jpg?w=360&dpr=1.5",
     price:500,
     inStock:false,
@@ -184,7 +184,7 @@ const productsData= [
   {
     pName:"Kunal's Tee ",
     creator:"Kunal Shah",
-    platform:"instagram",
+    platform:"Instagram",
     image:"https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1621523141_4697000.jpg?w=360&dpr=1.5",
     price:500,
     inStock:true,
@@ -197,7 +197,7 @@ const productsData= [
   {
     pName:"Kunal's shirt ",
     creator:"Kunal Shah",
-    platform:"instagram",
+    platform:"Instagram",
     image:"https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1617693171_9331151.jpg?w=360&dpr=1.5",
     price:1500,
     inStock:true,
@@ -210,7 +210,7 @@ const productsData= [
   {
     pName:"Vehle's Tee ",
     creator:"Vehle.in",
-    platform:"instagram",
+    platform:"Instagram",
     image:"https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1618569394_1969975.jpg?w=360&dpr=1.5",
     price:500,
     inStock:true,
@@ -223,7 +223,7 @@ const productsData= [
    {
     pName:"Vehle's Dress ",
     creator:"Vehle.in",
-    platform:"instagram",
+    platform:"Instagram",
     image:"https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1618485117_9043059.jpg?w=360&dpr=1.5",
     price:1500,
     inStock:false,
@@ -236,7 +236,7 @@ const productsData= [
    {
     pName:" F-Tee ",
     creator:"FounderGraphy",
-    platform:"instagram",
+    platform:"Instagram",
     image:"https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/20200309103813-1.jpg?w=360&dpr=1.5",
     price:500,
     inStock:true,
@@ -249,7 +249,7 @@ const productsData= [
   {
     pName:"F-Dress ",
     creator:"FounderGraphy",
-    platform:"instagram",
+    platform:"Instagram",
     image:"https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1612937361_7393910.jpg?w=360&dpr=1.5",
     price:1500,
     inStock:false,
@@ -262,7 +262,7 @@ const productsData= [
   {
     pName:" M-Tee ",
     creator:"Marketing Stories",
-    platform:"instagram",
+    platform:"Instagram",
     image:"https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1620995234_2853783.jpg?w=360&dpr=1.5",
     price:500,
     inStock:false,
@@ -275,7 +275,7 @@ const productsData= [
    {
     pName:" M-Shirt ",
     creator:"Marketing Stories",
-    platform:"instagram",
+    platform:"Instagram",
     image:"https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1610618747_7377150.jpg?w=360&dpr=1.5",
     price:1500,
     inStock:false,
@@ -287,7 +287,7 @@ const productsData= [
     {
     pName:"Techie's Tee ",
     creator:"BeingTechSter",
-    platform:"instagram",
+    platform:"Instagram",
     image:"https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1621516789_6714765.jpg?w=360&dpr=1.5",
     price:500,
     inStock:true,
@@ -299,7 +299,7 @@ const productsData= [
      {
     pName:"Techie's Dress ",
     creator:"BeingTechSter",
-    platform:"instagram",
+    platform:"Instagram",
     image:"https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1616584791_8996794.jpg?w=360&dpr=1.5",
     price:1500,
     inStock:true,
@@ -311,7 +311,7 @@ const productsData= [
   {
     pName:"Abhi's Tee ",
     creator:"Abhi&Niyu",
-    platform:"instagram",
+    platform:"Instagram",
     image:"https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1620134685_2333999.jpg?w=360&dpr=1.5",
     price:500,
     inStock:true,
@@ -323,7 +323,7 @@ const productsData= [
   {
     pName:"Niyu's Tee ",
     creator:"Abhi&Niyu",
-    platform:"instagram",
+    platform:"Instagram",
     image:"https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1620936670_4781911.jpg?w=360&dpr=1.5",
     price:500,
     inStock:true,
@@ -680,7 +680,7 @@ usersData= [
   {userName:"admin",
   password:"admin",
   emailId:"admin@gmail.com",
-  cart:[{productId:"60ae41a11bf52300a16f2119",qty:1 },{productId:"60ae41a11bf52300a16f211a",qty:1 }],
+  cart:[{productId:"60b101aef6a7a300d0731202",qty:1 },{productId:"60b101aef6a7a300d0731203",qty:1 }],
   wishList:[],
   },
 
@@ -690,7 +690,7 @@ usersData= [
   password:"admin2",
   emailId:"admin2@gmail.com",
   cart:[],
-  wishList:[{productId:"60ae41a11bf52300a16f2119"},{productId:"60ae41a11bf52300a16f211a"}],
+  wishList:[{productId:"60b101aef6a7a300d0731202"},{productId:"60b101aef6a7a300d0731203"}],
   }
 ]
 
